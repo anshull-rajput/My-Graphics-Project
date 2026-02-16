@@ -1,6 +1,9 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=%20📊%20My%20Graphics%20Project&fontSize=40&fontAlignY=35&desc=Test%20Your%20Logic%20%7C%20Have%20Fun%20%7C%20Learn%20C➕➕&descAlignY=55" />
 </p>
 
+---
+
+
 ## 📊 My Graphic Project (C++ Console Version)
 
 A simple and interactive Snake Game built using C++ for the console.
@@ -59,6 +62,9 @@ S → Move Down
 A → Move Left
 
 D → Move Right
+
+---
+
 
 
 ## 🎯 Goal
