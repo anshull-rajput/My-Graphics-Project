@@ -7,7 +7,7 @@
 </p>
 
 
-## 📊 My Graphic Project (C++ Console Version)
+## *📊 My Graphic Project (C++ Console Version)*
 
 A simple and interactive Snake Game built using C++ for the console.
 This project demonstrates game loops, keyboard input handling, basic graphics using characters, and real-time movement logic.
@@ -19,7 +19,7 @@ This project demonstrates game loops, keyboard input handling, basic graphics us
 </p>
 
 
-## ✔ Features
+## *✔ Features*
 
 🟢 Smooth snake movement
 
@@ -40,7 +40,7 @@ This project demonstrates game loops, keyboard input handling, basic graphics us
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
 </p>
 
-## 📁 Files
+## *📁 Files*
 
 snake.cpp → Main game source code
 
@@ -53,7 +53,7 @@ README.md → Project documentation
 </p>
 
 
-## ▶ How to Compile (Windows / Linux)
+## *▶ How to Compile (Windows / Linux)*
 
 Using g++
 
@@ -70,7 +70,7 @@ Run the Game
 </p>
 
 
-## 🎮 How to Play
+## *🎮 How to Play*
 
 W → Move Up
 
@@ -87,7 +87,7 @@ D → Move Right
 
 
 
-## 🎯 Goal
+## *🎯 Goal*
 
 Eat the food (F or #) to grow your snake.
 Avoid hitting walls or your own tail!
@@ -98,7 +98,7 @@ Avoid hitting walls or your own tail!
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
 </p>
 
-## 🧠 Concepts Used
+## *🧠 Concepts Used*
 
 Loops & conditional statements
 
@@ -119,7 +119,7 @@ Basic console rendering
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
 </p>
 
-## 🧩 Game Structure
+## *🧩 Game Structure*
 
 📦 Snake-Game
 ├── snake.cpp     # Main game logic
@@ -131,7 +131,7 @@ Basic console rendering
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
 </p>
 
-## 🚀 Future Enhancements
+## *🚀 Future Enhancements*
 
 🌈 Add colors to the board
 
@@ -150,7 +150,7 @@ Basic console rendering
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
 </p>
 
-## 👨‍💻 Author
+## *👨‍💻 Author*
 
 ## *Anshul Rajput* 
 ## *Software Developer | C++ | Python |*
