@@ -152,7 +152,7 @@ Basic console rendering
 
 ## 👨‍💻 Author
 
-Anshul Rajput Software Developer | C++,Python
+## *Anshul Rajput | Software Developer | C++ | Python |*
 
 👉 GitHub: https://github.com/anshull-rajput
 
