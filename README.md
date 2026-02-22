@@ -1,7 +1,10 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=%20📊%20My%20Graphics%20Project&fontSize=40&fontAlignY=35&desc=Test%20Your%20Logic%20%7C%20Have%20Fun%20%7C%20Learn%20C➕➕&descAlignY=55" />
 </p>
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 
 ## 📊 My Graphic Project (C++ Console Version)
@@ -10,7 +13,11 @@ A simple and interactive Snake Game built using C++ for the console.
 This project demonstrates game loops, keyboard input handling, basic graphics using characters, and real-time movement logic.
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
+
 
 ## ✔ Features
 
@@ -28,7 +35,10 @@ This project demonstrates game loops, keyboard input handling, basic graphics us
 
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 ## 📁 Files
 
@@ -37,8 +47,11 @@ snake.cpp → Main game source code
 README.md → Project documentation
 
 
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
----
 
 ## ▶ How to Compile (Windows / Linux)
 
@@ -51,7 +64,11 @@ Run the Game
 ./snake
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
+
 
 ## 🎮 How to Play
 
@@ -63,7 +80,10 @@ A → Move Left
 
 D → Move Right
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 
 
@@ -73,7 +93,10 @@ Eat the food (F or #) to grow your snake.
 Avoid hitting walls or your own tail!
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 ## 🧠 Concepts Used
 
@@ -91,7 +114,10 @@ Basic console rendering
 
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 ## 🧩 Game Structure
 
@@ -100,7 +126,10 @@ Basic console rendering
 └── README.md     # Project documentation
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 ## 🚀 Future Enhancements
 
@@ -116,7 +145,10 @@ Basic console rendering
 
 
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
 ## 👨‍💻 Author
 
@@ -126,11 +158,11 @@ Anshul Rajput Software Developer | C++,Python
 
 👉 LinkedIn: www.linkedin.com/in/anshull-rajput
 
----
 
-### ⭐ If you like this project, consider giving it a star on GitHub!
+### *⭐ If you like this project, consider giving it a star on GitHub!*
 
----
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="90%" />
+</p>
 
-
----
