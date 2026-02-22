@@ -154,9 +154,14 @@ Basic console rendering
 
 ## *Anshul Rajput | Software Developer | C++ | Python |*
 
-👉 GitHub: https://github.com/anshull-rajput
-
-👉 LinkedIn: www.linkedin.com/in/anshull-rajput
+## 🌐 *Connect with Me*
+<p align="center">
+  <a href="mailto:anshulrajput262006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="45"/></a>
+  <a href="https://www.linkedin.com/in/anshull-rajput"><img src="https://skillicons.dev/icons?i=linkedin" height="45"/></a>
+  <a href="https://instagram.com/anshull_rajput_"><img src="https://skillicons.dev/icons?i=instagram"height="45"/></a>
+  <a href="https://api.whatsapp.com/send?phone=919238916565"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" height="50"/></a>
+  
+</p>
 
 
 ### *⭐ If you like this project, consider giving it a star on GitHub!*
