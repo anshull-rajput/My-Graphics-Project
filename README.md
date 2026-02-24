@@ -153,7 +153,7 @@ Basic console rendering
 ## *👨‍💻 Author*
 
 ## *Anshul Rajput* 
-## *Software Developer | C++ | Python |*
+## *Software Developer | C++ | Python | Data Scientist |*
 
 ## 🌐 *Connect with Me*
 <p align="center">
