@@ -1,29 +1,62 @@
-# Snake Game 🐍
+# 🐍 Snake Game
 
-A simple Snake Game made in C++ using basic computer graphics concepts.
+A simple **console-based Snake Game** built in C++ using basic game programming concepts.
+
+The player controls the snake, collects food to increase the score, and avoids hitting the snake's own body.
 
 ## Features
 
-- Snake movement
-- Food generation
+- W A S D keyboard controls
+- Random food generation
 - Score tracking
-- Game-over condition
+- Snake grows after eating food
+- Collision detection
+- Game over condition
+- Boundary wrap-around
+- Simple console interface
 
-## Tech Used
+## Tech Stack
 
 - C++
-- Computer Graphics
+- Standard Library
+- Windows Console Input
 
-## Run
+## How to Run
 
-Compile `snake.cpp` using a C++ compiler configured for the graphics library used by the project, then run the generated program.
+This project uses Windows-specific console functions such as `conio.h` and `windows.h`.
+
+Compile `snake.cpp` with a C++ compiler on Windows and run the generated executable.
+
+Example:
+
+```bash
+g++ snake.cpp -o snake.exe
+snake.exe
+```
+
+## Controls
+
+| Key | Action |
+| --- | --- |
+| W | Move Up |
+| A | Move Left |
+| S | Move Down |
+| D | Move Right |
+| X | Quit Game |
 
 ## Concepts Practiced
 
-- C++ basics
-- Loops and conditions
+- Variables and data types
 - Functions
+- Loops and conditions
+- Vectors
 - Keyboard input
-- Basic graphics and game logic
+- Random number generation
+- Collision detection
+- Basic game logic
+
+## Note
+
+This is a beginner-level C++ project created for learning programming and game logic. It uses a console interface rather than a graphical game engine.
 
 **Author:** Anshul Rajput
