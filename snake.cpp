@@ -1,120 +1,137 @@
-// snake.cpp - console snake (Windows)
-// Full corrected file with Input() fix and WinMain wrapper.
-
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <utility>
+#include <cstdlib>
+#include <ctime>
 #include <conio.h>
 #include <windows.h>
 using namespace std;
 
-int width = 40, height = 20;
+const int WIDTH = 40;
+const int HEIGHT = 20;
+
 bool gameOver;
 int score;
 int headX, headY;
-vector<pair<int,int>> snake;
-int dirX, dirY;
-pair<int,int> fruit;
+int directionX, directionY;
+pair<int, int> food;
+vector<pair<int, int>> snake;
 
-void Setup() {
+void setup() {
     gameOver = false;
     score = 0;
-    headX = width/2;
-    headY = height/2;
+    headX = WIDTH / 2;
+    headY = HEIGHT / 2;
+    directionX = 1;
+    directionY = 0;
+
     snake.clear();
     snake.push_back({headX, headY});
-    dirX = 1; dirY = 0;
-    srand((unsigned)time(nullptr));
-    fruit = { rand() % width, rand() % height };
+
+    srand(static_cast<unsigned>(time(nullptr)));
+    food = {rand() % WIDTH, rand() % HEIGHT};
 }
 
-void Draw() {
+void draw() {
     system("cls");
-    for (int i=0;i<width+2;i++) cout << '#';
+
+    for (int i = 0; i < WIDTH + 2; i++) cout << '#';
     cout << '\n';
 
-    for (int y=0; y<height; y++) {
+    for (int y = 0; y < HEIGHT; y++) {
         cout << '#';
-        for (int x=0; x<width; x++) {
+
+        for (int x = 0; x < WIDTH; x++) {
             bool printed = false;
-            if (x==fruit.first && y==fruit.second) { cout << 'F'; printed=true; }
-            else {
-                for (size_t k=0;k<snake.size();k++){
-                    if (snake[k].first==x && snake[k].second==y) {
-                        if (k==0) cout<<'O'; else cout<<'o';
+
+            if (x == food.first && y == food.second) {
+                cout << 'F';
+                printed = true;
+            } else {
+                for (size_t i = 0; i < snake.size(); i++) {
+                    if (snake[i].first == x && snake[i].second == y) {
+                        cout << (i == 0 ? 'O' : 'o');
                         printed = true;
                         break;
                     }
                 }
             }
+
             if (!printed) cout << ' ';
         }
+
         cout << "#\n";
     }
 
-    for (int i=0;i<width+2;i++) cout << '#';
-    cout << "\nScore: " << score << "\n";
-    cout << "Use W A S D to move. Press X to quit.\n";
+    for (int i = 0; i < WIDTH + 2; i++) cout << '#';
+    cout << "\nScore: " << score << '\n';
+    cout << "W A S D = Move | X = Quit\n";
 }
 
-void Input() {
-    if (_kbhit()) {
-        char c = _getch();
-        if (c=='a' || c=='A') { dirX = -1; dirY = 0; }
-        if (c=='d' || c=='D') { dirX = 1; dirY = 0; }
-        if (c=='w' || c=='W') { dirX = 0; dirY = -1; }
-        if (c=='s' || c=='S') { dirX = 0; dirY = 1; }
-        if (c=='x' || c=='X') gameOver = true;
+void input() {
+    if (!_kbhit()) return;
+
+    char key = _getch();
+
+    if ((key == 'w' || key == 'W') && directionY != 1) {
+        directionX = 0;
+        directionY = -1;
+    } else if ((key == 's' || key == 'S') && directionY != -1) {
+        directionX = 0;
+        directionY = 1;
+    } else if ((key == 'a' || key == 'A') && directionX != 1) {
+        directionX = -1;
+        directionY = 0;
+    } else if ((key == 'd' || key == 'D') && directionX != -1) {
+        directionX = 1;
+        directionY = 0;
+    } else if (key == 'x' || key == 'X') {
+        gameOver = true;
     }
 }
 
-void Logic() {
-    headX += dirX;
-    headY += dirY;
+void moveSnake() {
+    headX += directionX;
+    headY += directionY;
 
-    if (headX < 0) headX = width-1;
-    if (headX >= width) headX = 0;
-    if (headY < 0) headY = height-1;
-    if (headY >= height) headY = 0;
+    if (headX < 0) headX = WIDTH - 1;
+    if (headX >= WIDTH) headX = 0;
+    if (headY < 0) headY = HEIGHT - 1;
+    if (headY >= HEIGHT) headY = 0;
 
     snake.insert(snake.begin(), {headX, headY});
 
-    if (headX == fruit.first && headY == fruit.second) {
+    if (headX == food.first && headY == food.second) {
         score += 10;
-        while (true) {
-            pair<int,int> f = { rand()%width, rand()%height };
-            bool onSnake = false;
-            for (auto &p: snake) if (p==f) { onSnake = true; break; }
-            if (!onSnake) { fruit = f; break; }
-        }
+
+        do {
+            food = {rand() % WIDTH, rand() % HEIGHT};
+        } while (find(snake.begin(), snake.end(), food) != snake.end());
     } else {
         snake.pop_back();
     }
 
-    for (size_t i=1;i<snake.size();i++){
-        if (snake[i].first==headX && snake[i].second==headY) {
+    for (size_t i = 1; i < snake.size(); i++) {
+        if (snake[i] == snake[0]) {
             gameOver = true;
             break;
         }
     }
 }
 
-int main(){
-    Setup();
-    while(!gameOver){
-        Draw();
-        Input();
-        Logic();
+int main() {
+    setup();
+
+    while (!gameOver) {
+        draw();
+        input();
+        moveSnake();
         Sleep(120);
     }
-    cout << "Game Over! Final score: " << score << "\n";
-    cout << "Press any key to exit...\n";
+
+    cout << "\nGame Over! Final Score: " << score << '\n';
+    cout << "Press any key to exit...";
     _getch();
+
     return 0;
 }
-
-// Simple WinMain wrapper to avoid "undefined reference to WinMain" on some MinGW setups
-#ifdef _WIN32
-#include <windows.h>
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
-    return main();
-}
-#endif
